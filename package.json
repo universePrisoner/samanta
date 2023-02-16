@@ -1,0 +1,69 @@
+{
+  "name": "Samanta",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:watch": "webpack serve --mode development --hot",
+    "lint": "eslint ./src/**/*.{ts,tsx}",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeroWheel/samanta.git"
+  },
+  "author": "A.Volgin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zeroWheel/samanta/issues"
+  },
+  "homepage": "https://github.com/zeroWheel/samanta#readme",
+  "devDependencies": {
+    "@babel/core": "7.15.0",
+    "@babel/preset-env": "7.15.0",
+    "@babel/preset-react": "7.14.5",
+    "@babel/preset-typescript": "7.15.0",
+    "@storybook/addon-actions": "^6.4.0-alpha.25",
+    "@storybook/addon-essentials": "^6.4.0-alpha.25",
+    "@storybook/addon-links": "^6.4.0-alpha.25",
+    "@storybook/builder-webpack5": "^6.4.0-alpha.25",
+    "@storybook/manager-webpack5": "^6.4.0-alpha.25",
+    "@storybook/react": "^6.4.0-alpha.25",
+    "@testing-library/jest-dom": "5.14.1",
+    "@testing-library/react": "12.0.0",
+    "@testing-library/user-event": "13.2.1",
+    "@types/jest": "27.0.0",
+    "@types/react": "17.0.16",
+    "@types/react-dom": "17.0.9",
+    "@types/styled-components": "5.1.12",
+    "@typescript-eslint/eslint-plugin": "4.29.0",
+    "@typescript-eslint/parser": "4.29.0",
+    "babel-loader": "8.2.2",
+    "css-loader": "6.2.0",
+    "eslint": "7.32.0",
+    "eslint-plugin-react": "7.24.0",
+    "html-webpack-plugin": "5.3.2",
+    "husky": "7.0.1",
+    "jest": "27.0.6",
+    "lint-staged": "11.1.2",
+    "react-hot-loader": "4.13.0",
+    "style-loader": "3.2.1",
+    "ts-jest": "27.0.4",
+    "typescript": "4.3.5",
+    "webpack": "5.49.0",
+    "webpack-cli": "4.7.2",
+    "webpack-dev-server": "3.11.2"
+  },
+  "dependencies": {
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "styled-components": "5.3.0"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "npm run lint"
+    ]
+  }
+}
